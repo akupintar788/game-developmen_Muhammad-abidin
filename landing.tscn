@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxfy4r5t5l78m"]
+
+[ext_resource type="Texture2D" uid="uid://52f8ap8inuda" path="res://srigala.jpg" id="1_krfad"]
+
+[node name="landing" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(578.5, 324)
+scale = Vector2(3.94792, 3.51111)
+texture = ExtResource("1_krfad")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = 974.0
+offset_top = 313.0
+offset_right = 1108.0
+offset_bottom = 478.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/MarginContainer2"]
+layout_mode = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/MarginContainer3"]
+layout_mode = 2
+
+[node name="MarginContainer4" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/MarginContainer4"]
+layout_mode = 2

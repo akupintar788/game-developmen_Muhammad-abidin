@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://joarb24ivivm"]
+
+[ext_resource type="PackedScene" uid="uid://f6h5wyvoiywe" path="res://main_menu.tscn" id="1_l5ywu"]
+[ext_resource type="PackedScene" uid="uid://c1002xiifqio5" path="res://jalan.tscn" id="2_g5fov"]
+[ext_resource type="PackedScene" uid="uid://cp7mw5fg2d1ct" path="res://baground.tscn" id="3_qfreu"]
+
+[node name="animasi" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [109.0]
+
+[node name="jalan" parent="." instance=ExtResource("2_g5fov")]
+
+[node name="Main Menu" parent="." instance=ExtResource("1_l5ywu")]
+position = Vector2(-1064, 713)
+
+[node name="backround" parent="." instance=ExtResource("3_qfreu")]
+position = Vector2(-8, 11)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(577, 320)

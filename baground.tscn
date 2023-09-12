@@ -1,0 +1,56 @@
+[gd_scene load_steps=11 format=3 uid="uid://cp7mw5fg2d1ct"]
+
+[ext_resource type="Script" path="res://res.=biru.gd" id="1_m16wg"]
+[ext_resource type="Texture2D" uid="uid://dtnbfgxfarvct" path="res://assets/bacround/parallax-00.png" id="1_u3wq1"]
+[ext_resource type="Texture2D" uid="uid://bn1pu8oignn2n" path="res://assets/bacround/parallax-01.png" id="2_8gkti"]
+[ext_resource type="Texture2D" uid="uid://b4us7xidllm0g" path="res://assets/bacround/parallax-02.png" id="3_3xmwx"]
+[ext_resource type="Script" path="res://res.awan.gd" id="3_lhno3"]
+[ext_resource type="Texture2D" uid="uid://cxnlgrv1hqqhc" path="res://assets/bacround/parallax-03.png" id="4_km0do"]
+[ext_resource type="Texture2D" uid="uid://cn23csu3sm8af" path="res://assets/bacround/parallax-04.png" id="5_d6bpb"]
+[ext_resource type="Script" path="res://res.gunung.gd" id="5_wx1md"]
+[ext_resource type="Script" path="res://res.hutan.gd" id="7_l7utx"]
+[ext_resource type="Script" path="res://res.pp.gd" id="9_1glqp"]
+
+[node name="backround" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+script = ExtResource("1_m16wg")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(571, 320.875)
+scale = Vector2(0.777778, 1.67847)
+texture = ExtResource("1_u3wq1")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+script = ExtResource("3_lhno3")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(581.5, 325)
+scale = Vector2(0.760417, 1.52222)
+texture = ExtResource("2_8gkti")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+script = ExtResource("5_wx1md")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(577, 327.5)
+scale = Vector2(0.763889, 1.65833)
+texture = ExtResource("3_3xmwx")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+script = ExtResource("7_l7utx")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(577.5, 324.5)
+scale = Vector2(0.763194, 1.64167)
+texture = ExtResource("4_km0do")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
+script = ExtResource("9_1glqp")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
+position = Vector2(575.5, 320)
+scale = Vector2(0.757639, 1.10156)
+texture = ExtResource("5_d6bpb")
